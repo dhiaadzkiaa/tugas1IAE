@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Cuaca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CuacaKu</h2>
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input type="text" id="city" placeholder="Masukkan nama kota">
+                <div id="suggestions" class="suggestions-box"></div>
+            </div>
+            <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="result"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

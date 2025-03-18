@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    position: relative;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    z-index: 10;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    z-index: 10;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 120px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.weather-icon {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.clear-sky { color: #f7b733; }
+.few-clouds { color: #f7d278; } 
+.overcast-clouds, .broken-clouds { color: #b0c4de; } 
+.shower-rain, .rain { color: #3498db; }
+.thunderstorm { color: #8e44ad; } 
+.snow { color: #ffffff; text-shadow: 0px 0px 5px #dff9fb; }
+.mist { color: #95a5a6; }
